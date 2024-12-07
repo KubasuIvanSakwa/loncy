@@ -26,9 +26,9 @@ function Servicestab() {
     return (
 
 
-        <div className="grid mt-8 mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
+        <div className="grid mt-8 mb-8 border border-gray-200 rounded-lg shadow-sm  md:mb-12 md:grid-cols-2 bg-white">
             {services.map((item) => (
-                <figure key={item.id} className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
+                <figure key={item.id} className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e">
                     <figcaption className="flex items-center justify-center ">
                         <Servicecard title={item.name} desc={item.description} url={item.url}/>
                     </figcaption>
