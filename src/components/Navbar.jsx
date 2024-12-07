@@ -18,7 +18,7 @@ function Navbar() {
                 <button
                     data-collapse-toggle="navbar-dropdown"
                     type="button"
-                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
                     aria-controls="navbar-dropdown"
                     aria-expanded={menuOpen}
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -43,14 +43,14 @@ function Navbar() {
                         <li>
                             {location.pathname === '/' && <Link
                                 to="/"
-                                className="block py-2 px-3 text-blue-700  bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                                className="block py-2 px-3 text-blue-700  bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
                                 aria-current="page"
                             >
                                 Home
                             </Link>}
                             {location.pathname !== '/' && <Link
                                 to="/"
-                                className="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:text-gray-900 md:p-0 md:dark:bg-transparent"
+                                className="block py-2 px-3 text-gray-900 rounded md:bg-transparent md:text-gray-900 md:p-0"
                                 aria-current="page"
                             >
                                 Home
@@ -67,7 +67,7 @@ function Navbar() {
                                     <button
                                     id="dropdownNavbarLink"
                                     data-dropdown-toggle="dropdownNavbar"
-                                    className="flex items-center justify-between w-full py-2 px-3 text-blue-700  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                                    className="flex items-center justify-between w-full py-2 px-3 text-blue-700  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
                                     onClick={() => setDropdownOpen(!dropdownOpen)}
                                 >
                                     Services
@@ -91,7 +91,7 @@ function Navbar() {
                                     <button
                                     id="dropdownNavbarLink"
                                     data-dropdown-toggle="dropdownNavbar"
-                                    className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                                    className="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto"
                                     onClick={() => setDropdownOpen(!dropdownOpen)}
                                 >
                                     Services
@@ -114,16 +114,16 @@ function Navbar() {
                                 {dropdownOpen && (
                                     <div
                                         id="dropdownNavbar"
-                                        className="absolute md:absolute z-20 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+                                        className="absolute md:absolute z-20 font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44"
                                     >
                                         <ul
-                                            className="py-2 text-sm text-gray-700 dark:text-gray-400"
+                                            className="py-2 text-sm text-gray-700"
                                             aria-labelledby="dropdownLargeButton"
                                         >
                                             <li>
                                                 <Link
                                                     to="services/education"
-                                                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                    className="block px-4 py-2 hover:bg-gray-100"
                                                 >
                                                     Education
                                                 </Link>
@@ -131,7 +131,7 @@ function Navbar() {
                                             <li>
                                                 <Link
                                                     to="services/branding"
-                                                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                    className="block px-4 py-2 hover:bg-gray-100"
                                                 >
                                                     Design & Branding
                                                 </Link>
@@ -139,7 +139,7 @@ function Navbar() {
                                             <li>
                                                 <Link
                                                     to="services/business"
-                                                    className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                                    className="block px-4 py-2 hover:bg-gray-100"
                                                 >
                                                     Business Solutions
                                                 </Link>
@@ -152,13 +152,13 @@ function Navbar() {
                         <li>
                             {location.pathname === '/about' && <Link
                                 to="about"
-                                className="block py-2 px-3 text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-2 px-3 text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                             >
                                 About Us
                             </Link>}
                             {location.pathname !== '/about' && <Link
                                 to="about"
-                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                             >
                                 About Us
                             </Link>}
@@ -166,14 +166,14 @@ function Navbar() {
                         <li>
                             {location.pathname === '/contact' && <Link
                                 to="contact"
-                                className="block py-2 px-3 text-blue-700  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-2 px-3 text-blue-700  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                             >
                                 Contact
                             </Link>}
 
                             {location.pathname !== '/contact' && <Link
                                 to="contact"
-                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                             >
                                 Contact
                             </Link>}
