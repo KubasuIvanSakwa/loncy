@@ -43,7 +43,7 @@ function Navbar() {
                         <li>
                             {location.pathname === '/' && <Link
                                 to="/"
-                                className="block py-2 px-3 text-blue-700  bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                                className="block py-2 px-3 text-blue-700  rounded md:bg-transparent md:text-blue-700 md:p-0"
                                 aria-current="page"
                             >
                                 Home
